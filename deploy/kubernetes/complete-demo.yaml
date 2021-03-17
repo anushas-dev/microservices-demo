@@ -390,7 +390,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginx
+      name: payment
   template:
     metadata:
       labels:
@@ -439,7 +439,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginx
+      name: queue-master
   template:
     metadata:
       labels:
@@ -481,7 +481,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginx
+      name: rabbitmq
   template:
     metadata:
       labels:
@@ -531,7 +531,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginx
+      name: shipping
   template:
     metadata:
       labels:
@@ -592,7 +592,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginx
+      name: user-db
   template:
     metadata:
       labels:
